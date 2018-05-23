@@ -30,7 +30,7 @@ public class LocalAsynckService extends Service {
     @Override
     public int onStartCommand(Intent intent,int flags,int startId){
         Toast.makeText(getBaseContext(),"Demarrage du service ",Toast.LENGTH_LONG).show();
-        new BackGroundTask().execute("http://192.168.2.5/tdi/tdiPage.php");
+        new BackGroundTask().execute("https://api.myjson.com/bins/134856");
         return START_STICKY;
     }
 
